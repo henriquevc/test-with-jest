@@ -1,5 +1,0 @@
-() => {
-    describe('jisodijsfd', () => {
-        return true
-    })
-}
