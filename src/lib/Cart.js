@@ -19,12 +19,17 @@ export default class Cart {
         remove(this.items, {product})
     }
 
-    getTotal() {
+    getTotal () {
         return this.items.reduce((acc, item) => {
             return acc + item.quantity * item.product.price
         }, 0)
     }
 
-
+    checkout () {
+        return {
+            items: this.items,
+            total: this.getTotal()
+        }
+    }
 
 }
